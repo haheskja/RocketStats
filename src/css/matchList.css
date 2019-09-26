@@ -1,0 +1,188 @@
+.matchList {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.matchItem {
+    width: 99%;
+    background-color: white;
+    height: 250px;
+    margin: 10px 0 ;
+    border: 1px solid black;
+}
+
+.matchHeader {
+    width: 100%;
+    height: 50px;
+    background-color: #EAEBED;
+}
+
+.matchHeader h5 {
+    padding: 0;
+    color: #007090;
+    line-height: 50px;
+    height: 100%;
+    width: 54%;
+    margin: 0 2%;
+    float: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.matchContent {
+    width: 100%;
+    height: 200px;
+}
+
+tr:nth-of-type(even) { 
+    background: #eee; 
+  }
+
+.teamContent {
+    width: 100%;
+    height: 50%;
+}
+
+.matchTable {
+    width: 100%;
+}
+
+.matchTable td, .matchTable th {
+    max-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.matchContentScore {
+    width: 7%;
+    height: 100%;
+    border-right: 1px solid #EAEBED;
+}
+
+.matchScore {
+    float: left;
+    height: 100%;
+    width: 7%;
+    text-align: center;
+    line-height: 75px;
+}
+
+.matchPlayers {
+    width: 93%;
+    height: 100%;
+    float: left;
+}
+
+.playerList {
+    list-style: none;
+    padding: 0;
+}
+
+.playerList li{
+    display: block;
+    padding: 0;
+    margin: 0 5px;
+}
+
+.blue {
+    color: #01A7C2;
+}
+
+.orange {
+    color: #f58742;
+}
+
+.infoText {
+    font-size: 10px;
+    background-color: #A3BAC3;
+    padding: 2px;
+    border-radius: 2px;
+    margin: 0 2px;
+    line-height: 50px;
+
+}
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+    .container {
+        width: 95vw;
+    }
+
+    .matchItem {
+        height: 1100px;
+    }
+
+    .matchHeader {
+        height: 80px;
+    }
+
+    .matchHeader h5 {
+        line-height: 50px;
+        height: 50%;
+        width: 96%;
+        margin: 0 2%;
+        float: left;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .matchContent {
+        height: 1000px;
+    }
+
+    .teamContent {
+        border-bottom: 1px solid #eee;
+
+    }
+
+    .matchScore {
+        line-height: 500px;
+    }
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+	.matchTable td { 
+		/* Behave  like a "row" */
+		border: none;
+		position: relative;
+        padding-left: 50%;
+        overflow: visible; 
+        margin-bottom: 3px;
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 0px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+	/*
+	Label the data
+	*/
+	td:nth-of-type(1):before { content: "Player name"; }
+	td:nth-of-type(2):before { content: "BPM"; }
+	td:nth-of-type(3):before { content: "Speed"; }
+	td:nth-of-type(4):before { content: "Supersonic speed"; }
+	td:nth-of-type(5):before { content: "Boost speed"; }
+	td:nth-of-type(6):before { content: "Slow speed"; }
+}

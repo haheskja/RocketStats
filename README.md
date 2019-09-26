@@ -12,6 +12,8 @@ So, this app accepts two inputs from the user, a Steam64 ID and a date. By using
 
 There are many optimization and error handling possibilities that have not been implemented, but it serves as a Proof of Concept. Please refresh the page and try again if something does not work. It should work, but things have been a bit inconsistent.
 
+You need to create a .env file with `REACT_APP_KEY = "<Your api key>"`
+
 To start the app simply run `yarn` to install dependencies and then `yarn start` to start the development server.
 
 

@@ -43,11 +43,13 @@ const findDateData = async (data, date) => {
     return new Promise((resolve, reject) => {
         const dateArray = []
         let counter = 0
-        const today = moment.utc(date).date()
+        const todaysDate = moment.utc(date)
+        const today = todaysDate.date()
         while(data[counter]){
             data[counter].forEach(item => {
-                const date = moment.utc(item.date).date()
-                if (date === today) {
+                const dateObj = moment.utc(item.date)
+                const date = dateObj.date()
+                if (date === today && todaysDate.month() === dateObj.month()) {
                     dateArray.push(item)
                 }
             })

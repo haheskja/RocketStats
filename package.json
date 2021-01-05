@@ -5,7 +5,7 @@
   "dependencies": {
     "@dhis2/ui-core": "^3.9.1",
     "@dhis2/ui-widgets": "^1.0.8",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "http-proxy-middleware": "^0.20.0",
     "moment": "^2.24.0",
     "react": "^16.9.0",

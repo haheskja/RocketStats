@@ -7,7 +7,7 @@
     "@dhis2/ui-widgets": "^1.0.8",
     "axios": "^0.19.0",
     "http-proxy-middleware": "^0.20.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "react": "^16.9.0",
     "react-datepicker": "^2.9.6",
     "react-dom": "^16.9.0",
